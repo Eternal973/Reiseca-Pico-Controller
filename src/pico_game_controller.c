@@ -46,7 +46,7 @@ union {
     uint8_t buttons[LED_GPIO_SIZE];
     RGB_t rgb[WS2812B_LED_ZONES];
   } lights;
-  uint8_t raw[LED_GPIO_SIZE + WS2812B_LED_ZONES * 3];
+  uint8_t raw[WS2812B_LED_ZONES * 3 + 1];
 } lights_report;
 
 /**
@@ -111,6 +111,9 @@ void joy_mode() {
 
     report.joy0 = ((double)cur_enc_val[0] / ENC_PULSE) * (UINT8_MAX + 1);
     report.joy1 = ((double)cur_enc_val[1] / ENC_PULSE) * (UINT8_MAX + 1);
+    report.joy2 = ((double)cur_enc_val[2] / ENC_PULSE) * (UINT8_MAX + 1);
+    report.joy3 = ((double)cur_enc_val[3] / ENC_PULSE) * (UINT8_MAX + 1);
+    report.joy4 = ((double)cur_enc_val[4] / ENC_PULSE) * (UINT8_MAX + 1);
 
     tud_hid_n_report(0x00, REPORT_ID_JOYSTICK, &report, sizeof(report));
   }
