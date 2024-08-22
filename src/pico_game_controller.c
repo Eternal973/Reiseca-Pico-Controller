@@ -92,6 +92,9 @@ struct report {
   uint16_t buttons;
   uint8_t joy0;
   uint8_t joy1;
+  uint8_t joy2;
+  uint8_t joy3;
+  uint8_t joy4;
 } report;
 
 /**
