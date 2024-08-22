@@ -1,4 +1,6 @@
-# Pico-Game-Controller
+# Reiseca-Pico-Controller
+## This Project is based on speedypotato's Pico-Game-Controller
+Below is original readme, lazy for my own.
 
 Code for a keyboard or game controller using a Raspberry Pi Pico. Capable of handling 11 buttons, 10 LEDs, 1 WS2812B RGB strip, and 2 encoders. Developed with SDVX and IIDX in mind - see branches release/pocket-sdvx-pico and release/pocket-iidx for preconfigured versions.
 
