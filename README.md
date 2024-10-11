@@ -2,13 +2,13 @@
 ## This Project is based on speedypotato's Pico-Game-Controller
 Original readme please goto SpeedyPotatos' repo.
 
-Code for a keyboard or game controller using a Raspberry Pi Pico. Capable of handling 11 buttons, 10 LEDs, 1 WS2812B RGB strip, and 2 encoders. Developed with SDVX and IIDX in mind - see branches release/pocket-sdvx-pico and release/pocket-iidx for preconfigured versions.
-
-Demo of this firmware running on Pocket SDVX Pico, purchasable at https://discord.gg/MmuKd73XbY
+Code for a preconfigured museca controller using a Raspberry Pi Pico. Capable of handling 8 buttons, 1 LEDs, 1 WS2812B RGB strip, and 5 encoders.
 
 Currently working/fixed:
+
 (based on speedypotato's work)
 - Support the 5th encoder with pio_1
+- gpio config for my own board.
 
 TODO:
 
