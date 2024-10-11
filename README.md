@@ -1,8 +1,10 @@
 # Reiseca-Pico-Controller
-## This Project is based on speedypotato's Pico-Game-Controller
+## This Project is based on speedypotato's Pico-Game-Controller (GPL)
 Original readme please goto SpeedyPotatos' repo.
 
 Code for a preconfigured museca controller using a Raspberry Pi Pico. Capable of handling 8 buttons, 1 LEDs, 1 WS2812B RGB strip, and 5 encoders.
+This version may not work for SDVX or IIDX.
+I work with a museca con made with my firend, but only tested in mind because the controller is still under improvement.
 
 Currently working/fixed:
 
