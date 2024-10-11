@@ -203,7 +203,7 @@ void update_inputs()
 }
 
 /**
- * DMA Encoder Logic For 2 Encoders
+ * DMA Encoder Logic For 4+1 Encoders
  **/
 void dma_handler()
 {
@@ -218,6 +218,11 @@ void dma_handler()
   if (interrupt_channel < 4)
   {
     dma_channel_set_read_addr(interrupt_channel, &pio->rxf[interrupt_channel],
+                              true);
+  }
+  else if(interrupt_channel = 4)
+  {
+    dma_channel_set_read_addr(3, &pio_1->rxf[3],
                               true);
   }
 }
