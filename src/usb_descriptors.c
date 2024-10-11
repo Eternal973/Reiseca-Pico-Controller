@@ -162,7 +162,6 @@ char const* string_desc_arr[] = {
     "Proj.REIUJI",              // 1: Manufacturer
     "Reiseca Pico Controller",      // 2: Product
     "123456",                    // 3: Serials, should use chip ID
-    "Start",
     "Button 1R",
     "Button 1G",
     "Button 1B",
